@@ -7,13 +7,8 @@ namespace FizzWare.NBuilder.Extensions
 {
     public static class TypeExtensions
     {
-#if !NETSTANDARD1_6
+#if !NETSTANDARD1_6_OR_GREATER
         // added for api compatibility with .net standard
-
-        //public static MethodInfo GetMethodInfo(this MulticastDelegate d)
-        //{
-        //    return d.Method;
-        //}
 
         public static MethodInfo GetMethodInfo(this Delegate d)
         {
